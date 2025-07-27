@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import './main.css'
+import './globals.css'
 import AnalyticsScripts from './components/scripts/analytics'
 import AdScripts from './components/scripts/ads'
 

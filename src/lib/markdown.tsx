@@ -1,5 +1,3 @@
-// This file should only be imported and used in server-side code (e.g., getStaticProps or getServerSideProps)
-
 import { remark } from 'remark';
 import html from 'remark-html';
 import path from 'path'

@@ -36,13 +36,17 @@ export default function header() {
                     <Link href="/about-us">
                         <i className="fa-icon fa-solid fa-question mr-1"></i>
                         About</Link>
+                    
+                    <Link href="/articles">
+                        <i className="fa-solid fa-book"></i>
+                        Articles
+                    </Link>
 
                     <Link href="https://discord.gg/gRtt6Srw65" target="_blank">
                         <i className="fa-brands fa-discord mr-1"></i>
                         Discord</Link>
                 </nav>
             </div>
-            <Alert />
 </>
     )
 }

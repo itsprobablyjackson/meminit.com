@@ -8,11 +8,7 @@ type props = {
 
 export default function ogTags({ name, description, thumbnail, card = false }: props) {
     
-    let twitterCard
-
-    if (card) {
-        twitterCard = <meta name="twitter:card" content="summary_large_image"></meta>
-    }
+    let twitterCard = card ? <meta name="twitter:card" content="summary_large_image"></meta> : null
 
     return (
         <>

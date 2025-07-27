@@ -24,7 +24,7 @@ Welcome to **MeminIt**, your all-in-one destination for the best **online meme g
 
 ## Get Involved
 
-Have a tool idea or feature request? Visit our [**Suggestions**](/suggestions) page, send an [**email**](mailto:itsprobablyjackson@proton.me), or join our [**Discord server**](https://discord.gg/gRtt6Srw65) to connect with the community!
+Have a tool idea or feature request? Visit our [**Suggestions**](/suggestions) page, send an [**email**](mailto:mail@meminit.com), or join our [**Discord server**](https://discord.gg/gRtt6Srw65) to connect with the community!
 
 If you have feedback or run into issues, reach out anytime (AEST timezone).
 

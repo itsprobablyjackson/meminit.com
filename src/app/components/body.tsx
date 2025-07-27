@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-type props = {children: ReactNode, className: string}
+type props = {children?: ReactNode, className: string}
 
 export default function defaultBody({ children, className }: props) {
     return (
