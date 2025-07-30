@@ -13,7 +13,7 @@ export default function header() {
 
     return (
         <>
-            <div className="bg-zinc-900 w-full flex not-md:flex-col flex-row p-3 justify-between sticky top-0 z-10" >
+            <div className="bg-zinc-900 w-full h-17 flex not-md:flex-col flex-row p-3 justify-between sticky top-0 z-10" >
                 <link rel="stylesheet" href="/all.min.css"></link>
                 <div className="not-md:flex not-md:flex-row not-md:justify-between">
                     <a className="h-full w-full max-w-[300px] flex flex-row items-center gap-2" href="/">

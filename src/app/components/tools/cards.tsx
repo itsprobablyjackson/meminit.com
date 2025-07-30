@@ -42,7 +42,7 @@ export default {
 
     articleCard: function ({ name, shortDescription, href, thumbnail, identifier }: props) {
         return (
-            <a className="w-full min-h-full rounded-lg flex flex-col" key={identifier} href={href}>
+            <a className="w-full rounded-lg flex flex-col" key={identifier} href={href}>
                 <div className={`w-full bg-center bg-cover bg-no-repeat ${css.outShaded} rounded-2xl aspect-video`} style={{backgroundImage: `url(${thumbnail})`}}></div>
                 <div className="pt-2">
                     <p className="text-xl font-bold text-ellipsis">{name}</p>
