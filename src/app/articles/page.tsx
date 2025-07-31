@@ -32,7 +32,7 @@ const lightFontFamily = Montserrat({
 })
 
 export default function page() {
-    return (<body className="h-[100vh] flex flex-col justify-between">
+    return (<body className={`h-[100vh] flex flex-col justify-between ${fontFamily.className}`}>
         <Header />
         <div className={`w-full flex-col flex grow items-center ${fontFamily.className}`}>
             <div className="w-full max-w-[800px] p-5 flex flex-col gap-5">

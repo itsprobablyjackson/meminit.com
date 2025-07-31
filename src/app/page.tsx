@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/defaults/header"
 import toolsList from "./tools"
 import Cards from "./components/tools/cards"
@@ -6,10 +5,19 @@ import AdBanner from "./components/adComponents/banner"
 import MarkDown from "./components/md/md2html"
 import Footer from "./components/defaults/footer"
 import OgTags from "@/app/components/meta/og";
-
-import dynamic from "next/dynamic";
-import tool from "./tools/gif-converter/tool";
 import tools from "./tools";
+
+import { Montserrat } from "next/font/google"
+
+const fontFamily = Montserrat({
+    weight: "500",
+    subsets: ["latin"]
+})
+
+const lightFontFamily = Montserrat({
+    weight: "300",
+    subsets: ["latin"]
+})
 
 export default function Home() {
   return (
@@ -28,7 +36,7 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="32x32" href="/static/images/icons/favicon-126x126.png" />
 
       </>
-      <body className="bg-zinc-900">
+      <body className={`bg-zinc-900 ${fontFamily.className}`}>
         <Header />
         <div className="grid grid-cols-2 not-md:grid-cols-1 box-border w-full p-5 gap-10">
           <Cards.largeCard
