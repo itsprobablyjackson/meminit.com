@@ -104,24 +104,32 @@ export default function Page({ article, extraHtml }: articleClient) {
 
 }
 
-export async function getServerSideProps(context: context) {
+export async function getStaticPaths() {
+    const allArticles = Articles.list() as articleData[];
+    const paths = allArticles.map(article => ({
+        params: { slug: article.slug }
+    }));
 
-    const articleData = await Articles.getBySlug(context.params.slug || '') as article
+    return {
+        paths,
+        fallback: false
+    };
+}
 
-    await articleData
+export async function getStaticProps(context: context) {
+    const slug = context.params.slug || '';
+    const articleData = await Articles.getBySlug(slug) as article;
 
-    if (!articleData.found) return { notFound: true }
+    if (!articleData.found) return { notFound: true };
 
-    let articleList: articleData[] = []
-
+    let articleList: articleData[] = [];
     Articles.list().map((article, num) => {
-        const data = article as articleData
-        articleList.push(data)
-    })
+        const data = article as articleData;
+        articleList.push(data);
+    });
 
     return {
         props: {
-
             article: {
                 ...articleData
             },
@@ -129,5 +137,5 @@ export async function getServerSideProps(context: context) {
                 sideArticles: articleList
             }
         }
-    }
+    };
 }
