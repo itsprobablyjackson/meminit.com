@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next';
 import articles from '@/lib/articles';
 import tools from '@/app/tools';
 
+export const dynamic = "force-static";
+
 const DOMAIN = 'https://meminit.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
